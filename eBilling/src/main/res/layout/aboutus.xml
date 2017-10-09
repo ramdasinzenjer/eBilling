@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:padding="20dp"
+    
+     >
+      <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+
+        
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+              <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:text="Rate Details:" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/scrollView1"
+        android:layout_marginTop="10dp"
+        android:text=" For Industrial Buildings: \n Fixed Charge\t=\t40/- Rs \n Meter Rent\t=\t12/- Rs \n Electricity Duty\t=\t.26 rupees per unit
+ Electricity Charge\t=\t2.9 rupees per unit \n \t&apos;&apos;(Above 300unit usage)\t=\t7 rupees per unit
+ \n For Household Buildings: \n Fixed Charge\t=\t360/-Rs \n Meter Rent\t=\t12/-Rs \n Electricity Duty\t=\t.68 rupees per unit
+ Electricity Charge\t=\t7 rupees per unit"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+   <!--  <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Mini-project submitted on Partial fulfillment of the requirement for the award of Master Degree in Computer Application of Anna University 
+
+"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" /> -->
+
+ <!--    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold|italic"
+        android:text="Done by: \n
+
+Arya (reg:no)\n
+
+Lakshmi (reg:no)\n
+
+Vinitha (reg:no)" /> -->
+
+   
+            
+             <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold|italic"
+        android:text="About Us:\n E-Billing is one of the newly recommended application where  users can obtain and maintain their electricity bills in home , office or any other buildings through an android application .The main concept of this project is to provide an android based application to the technically developing society for finding an efficient and easy method for electricity  billing purpose . The users can also view the billing and view the previous consumer reading from an user interface page. That will provide an exact way to maintain their economic state. " />
+            
+        </LinearLayout>
+    </ScrollView>
+
+  
+
+</RelativeLayout>

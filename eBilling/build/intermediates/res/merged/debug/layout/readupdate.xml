@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+     >
+
+    <EditText
+        android:id="@+id/pmread01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/premeter01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Previous Reading"
+        android:background="#ffffff"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/currmeter01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pmread01"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Current Meter Reading" />
+    
+    
+    <EditText
+        android:id="@+id/currread01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currmeter01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Current Reading"
+        android:background="#ffffff"
+        android:inputType="number" 
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/bldate01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/premeter01"
+        android:layout_alignLeft="@+id/pmread01"
+        android:layout_marginBottom="37dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Date in dd/mm/yyyy"
+        android:inputType="date"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/premeter01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currmeter01"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="218dp"
+        android:layout_weight="1"
+        android:text="Previous Meter Reading"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bill01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currread01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="#146a89"
+        android:padding="10dp"
+        android:text="Update Meter Reading"
+        android:textColor="#ffffff" />
+
+    <Spinner
+        android:id="@+id/spinner_customers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bldate01"
+        android:layout_alignLeft="@+id/bldate01"
+        android:layout_alignRight="@+id/bldate01"
+        android:layout_marginBottom="45dp" />
+
+</RelativeLayout>

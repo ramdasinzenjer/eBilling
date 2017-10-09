@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="6dp"
+     android:background="@drawable/bg"
+     >
+    
+    
+      <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    
+        android:gravity="center_horizontal"
+        android:background="#146a89"
+        android:textStyle="bold|italic"
+        android:text="***** Electricity Auto-generated Bill"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+      <LinearLayout
+          android:id="@+id/l1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/head"
+          android:layout_marginTop="30dp"
+          android:orientation="horizontal"
+           android:background="@drawable/border"
+          android:weightSum="3"
+         
+           >
+           <TextView
+               android:id="@+id/elsection"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/subborder"
+           	   android:hint="Section"
+           	   	    
+               />
+           <TextView
+               android:id="@+id/cnsno"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/subborder"
+           	   android:hint="Consumer number"	    
+               />
+           <TextView
+               android:id="@+id/dat"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/subborder"
+           	   android:hint="Date"	    
+               />
+
+      </LinearLayout>
+       <LinearLayout
+           android:id="@+id/l2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/l1"
+          android:layout_marginTop="20dp"
+          android:orientation="horizontal"
+          android:background="@drawable/border"
+          android:weightSum="2"
+           >
+           
+           <TextView
+               android:id="@+id/nam"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/subborder"
+           	   android:hint="Name"	    
+               />
+           <TextView
+               android:id="@+id/phn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/subborder"
+           	   android:hint="Phone"	    
+               />
+           
+      
+      </LinearLayout>
+       <LinearLayout
+           android:id="@+id/l3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/l2"
+          android:layout_marginTop="20dp"
+          android:orientation="horizontal"
+          android:background="@drawable/border"
+          
+           >
+           
+           <TextView
+               android:id="@+id/add"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:background="@drawable/subborder"
+               android:hint="Address" />
+      
+      </LinearLayout>
+      
+       <LinearLayout
+           android:id="@+id/l4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/l3"
+          android:layout_marginTop="20dp"
+          android:orientation="horizontal"
+          android:background="@drawable/border"
+          android:weightSum="2"
+          
+           >
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:orientation="vertical"
+               android:background="@drawable/subborder"
+               android:weightSum="2" >
+
+           <TextView
+               android:id="@+id/prerdng"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/subborder"
+               android:hint="Previous Reading" />
+           
+           <TextView
+               android:id="@+id/currdng"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:layout_weight="1"
+               android:background="@drawable/subborder"
+               android:hint="Current Reading" />
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/usag"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:gravity="center_vertical|center_horizontal"
+              android:background="@drawable/subborder"
+               android:hint="Usage" />
+      
+      </LinearLayout>
+      <LinearLayout
+           android:id="@+id/l5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/l4"
+          android:layout_marginTop="20dp"
+          android:orientation="horizontal"
+          android:background="@drawable/border"
+          android:weightSum="2"
+          
+           >
+              
+           <LinearLayout 
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:orientation="vertical"
+               android:weightSum="3"
+               android:layout_weight="1"
+               android:background="@drawable/subborder"
+               >
+           <TextView
+               android:id="@+id/mrent"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/subborder"
+               android:hint="Meter Rent" />
+           
+           <TextView
+               android:id="@+id/eduty"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:layout_weight="1"
+               android:background="@drawable/subborder"
+               android:hint="Electricity Duty" />
+           
+              <TextView
+               android:id="@+id/fcharge"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:layout_weight="1"
+               android:background="@drawable/subborder"
+               android:hint="Fixed Charge" />
+          
+      
+          </LinearLayout>
+
+           <TextView
+               android:id="@+id/tamt"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1.00"
+               android:background="@drawable/subborder"
+               android:gravity="center_vertical|center_horizontal"
+               android:hint="Total Amount" />
+      
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/paydat"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/l5"
+          android:layout_below="@+id/l5"
+          android:layout_marginLeft="36dp"
+          android:layout_marginTop="36dp"
+          android:background="@drawable/subborder"
+          android:hint="Payment Date" />
+
+      <Button
+          android:id="@+id/rem"
+          style="?android:attr/buttonStyleSmall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/paydat"
+          android:layout_alignBottom="@+id/paydat"
+          android:layout_alignRight="@+id/l5"
+          android:onClick="sheduleAlarm"
+          android:text="Remind me."
+          android:textColor="#ffffff"
+          android:background="#146a89"
+          android:padding="10dp" />
+
+</RelativeLayout>

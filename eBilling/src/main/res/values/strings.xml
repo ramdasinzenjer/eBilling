@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eBilling</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="server">http://192.168.43.28/e_bill/</string>
+    <string-array name="ele_sect">
+        <item>Trivandrum</item>
+        <item>Attingal</item>
+        <item>Kadakavur</item>
+        <item>Nemom</item>
+	</string-array>
+
+</resources>

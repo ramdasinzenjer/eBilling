@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+      
+        android:paddingLeft="50dp"
+        android:text="Bill Details"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+    
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="5" >
+
+			        <LinearLayout 
+			        android:id="@+id/lilay1"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/head"
+			      	android:orientation="horizontal"
+			      	android:layout_weight="1"
+			      	android:weightSum="2"
+			        >
+
+			        <TextView
+			            android:id="@+id/cname"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:paddingLeft="5dp"
+			            android:text="Consumer Name:"
+			            android:textSize="20sp"
+			            android:textStyle="bold" />
+			        
+			         <TextView
+			             android:id="@+id/name"
+			             android:layout_width="match_parent"
+			             android:layout_height="wrap_content"
+			             android:layout_alignParentLeft="true"
+			             android:layout_alignParentRight="true"
+			             android:layout_alignParentTop="true"
+			             android:textSize="20sp"
+			             android:hint="Name" 
+			             android:gravity="right"
+			             android:paddingRight="5dp"
+			             />
+			        
+			        </LinearLayout>
+			        <LinearLayout 
+			        android:id="@+id/lilay2"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/lilay1"
+			      	android:orientation="horizontal"
+			      	android:weightSum="2"
+			      	android:layout_weight="1"
+			        >
+
+			        <TextView
+			            android:id="@+id/bnum"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:paddingLeft="5dp"
+			            android:text="Bill No:"
+			            android:textSize="20sp"
+			            android:textStyle="bold" />
+			        
+			         <TextView
+			             android:id="@+id/num"
+			             android:layout_width="match_parent"
+			             android:layout_height="wrap_content"
+			             android:layout_alignParentLeft="true"
+			             android:layout_alignParentRight="true"
+			             android:layout_alignParentTop="true"
+			             android:textSize="20sp"
+			             android:hint="Bill number" 
+			             android:gravity="right"
+			             android:paddingRight="5dp"
+			             />
+			        
+			        </LinearLayout>
+			        <LinearLayout 
+			        android:id="@+id/lilay3"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/lilay2"
+			      	android:orientation="horizontal"
+			      	android:weightSum="2"
+			      	android:layout_weight="1"
+			        >
+
+			        <TextView
+			            android:id="@+id/prdng"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:paddingLeft="5dp"
+			            android:text="Prev. Reading:"
+			            android:textSize="20sp"
+			            android:textStyle="bold" />
+			        
+			         <TextView
+			             android:id="@+id/rdng"
+			             android:layout_width="match_parent"
+			             android:layout_height="wrap_content"
+			             android:layout_alignParentLeft="true"
+			             android:layout_alignParentRight="true"
+			             android:layout_alignParentTop="true"
+			             android:textSize="20sp"
+			             android:hint="Pre reading" 
+			             android:gravity="right"
+			             android:paddingRight="5dp"
+			             />
+			        
+			        </LinearLayout>
+			        <LinearLayout 
+			        android:id="@+id/lilay4"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/lilay3"
+			      	android:orientation="horizontal"
+			      	android:weightSum="2"
+			      	android:layout_weight="1"
+			        >
+
+			        <TextView
+			            android:id="@+id/crdng"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:text="Current Reading:"
+			            android:paddingLeft="5dp"
+			            android:textSize="20sp"
+			            android:textStyle="bold" />
+			        
+			         <TextView
+			             android:id="@+id/rdng1"
+			             android:layout_width="match_parent"
+			             android:layout_height="wrap_content"
+			             android:layout_alignParentLeft="true"
+			             android:layout_alignParentRight="true"
+			             android:layout_alignParentTop="true"
+			             android:textSize="20sp"
+			             android:hint="Current Reading" 
+			             android:gravity="right"
+			             android:paddingRight="5dp"
+			             />
+			        
+			        </LinearLayout>
+			          <LinearLayout 
+			        android:id="@+id/lilay5"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/lilay4"
+			      	android:orientation="horizontal"
+			      	android:weightSum="2"
+			      	android:layout_weight="1"
+			        >
+
+			        <TextView
+			            android:id="@+id/aamt"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:text="Amount  :"
+			            android:paddingLeft="5dp"
+			            android:textSize="20sp"
+			            android:textStyle="bold" />
+			        
+			         <TextView
+			             android:id="@+id/amt"
+			             android:layout_width="match_parent"
+			             android:layout_height="wrap_content"
+			             android:layout_alignParentLeft="true"
+			             android:layout_alignParentRight="true"
+			             android:layout_alignParentTop="true"
+			             android:textSize="20sp"
+			             android:hint="Amount" 
+			             android:gravity="right"
+			             android:paddingRight="5dp"
+			             />
+			        
+			        </LinearLayout>
+    </LinearLayout>
+    
+
+</RelativeLayout>

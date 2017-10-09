@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tv001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Customers List : " 
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <ListView
+        android:id="@+id/mlist"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv001"
+        android:layout_marginTop="12dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mlist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Register New Customer Here"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tv002"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+            
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:inputType="textPersonName"
+                              
+                 />
+            
+             <EditText
+                android:id="@+id/editConsnumber"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="Consnumber"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:inputType="number"
+                              
+                 />
+             
+              <EditText
+                android:id="@+id/editSecretcode"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="Secretcode"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:inputType="number"
+                              
+                 />
+              
+              <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:inputType="textPostalAddress"
+                              
+                 />
+              
+              <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:inputType="number"
+                              
+                 />
+            
+               <EditText
+                android:id="@+id/editConnectiontype"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="Connectiontype"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:inputType="text"
+                              
+                 />
+               
+               <Spinner 
+                   android:id="@+id/spinnerSection"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                />
+               <Button 
+                android:id="@+id/but_ok"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:hint="Add Customer"                
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:padding="10dp"
+                
+                   />
+              
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

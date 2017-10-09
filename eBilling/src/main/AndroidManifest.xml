@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="srt.inz.ebilling"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".AlarmReceiver"></receiver>
+        <activity android:name="Options"></activity>
+        <activity android:name="Billgen"></activity>
+        <activity android:name="Billview"></activity>
+        <activity android:name="Userdetails"></activity>
+       <activity android:name="Aboutus"></activity>
+       <activity android:name="AdminMain"></activity>
+       <activity android:name="Customer_details"></activity>
+       <activity android:name="Updatereading"></activity>
+    </application>
+
+
+</manifest>

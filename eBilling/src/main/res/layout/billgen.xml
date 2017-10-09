@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+     >
+
+        <TextView
+            android:id="@+id/premeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_marginTop="140dp"
+            android:text="Previous Meter Reading"
+            android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/pmread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/premeter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Previous Reading"
+        android:background="#ffffff"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/currmeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pmread"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Current Meter Reading" />
+    
+    
+    <EditText
+        android:id="@+id/currread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currmeter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Current Reading"
+        android:background="#ffffff"
+        android:inputType="number" 
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/currread"
+        android:layout_below="@+id/currread"
+        android:layout_marginTop="50dp"
+        android:background="#146a89"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:text="Generate Bill"
+         />
+
+    <EditText
+        android:id="@+id/bldate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:hint="Date in dd/mm/yyyy"
+        android:ems="10"
+        android:background="#ffffff"
+        android:inputType="date"
+        android:padding="10dp" />
+
+</RelativeLayout>

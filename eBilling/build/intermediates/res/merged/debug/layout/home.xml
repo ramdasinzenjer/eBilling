@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kseb"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Welcome To e-Billing"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Consumernum"
+        android:layout_below="@+id/Consumernum"
+        android:layout_marginTop="30dp"
+        android:hint="Secret Code"
+        android:background="#ffffff"
+        android:ems="10"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:inputType="textPassword"
+        android:padding="10dp" >
+
+       
+    </EditText>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/code"
+        android:layout_below="@+id/code"
+        android:layout_marginTop="26dp"
+        android:text="Proceed"
+        android:background="#146a89"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+         />
+
+    <EditText
+        android:id="@+id/Consumernum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:hint="Consumer number"
+        android:textSize="15sp"
+        
+        android:padding="10dp" >
+		
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/section_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Consumernum"
+        android:layout_alignRight="@+id/Consumernum"
+        android:layout_below="@+id/textView1"
+        android:background="#ffffff"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+         />
+
+</RelativeLayout>

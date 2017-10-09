@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="srt.inz.ebilling"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="srt.inz.ebilling.Home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="srt.inz.ebilling.AlarmReceiver" />
+
+        <activity android:name="srt.inz.ebilling.Options" />
+        <activity android:name="srt.inz.ebilling.Billgen" />
+        <activity android:name="srt.inz.ebilling.Billview" />
+        <activity android:name="srt.inz.ebilling.Userdetails" />
+        <activity android:name="srt.inz.ebilling.Aboutus" />
+        <activity android:name="srt.inz.ebilling.AdminMain" />
+        <activity android:name="srt.inz.ebilling.Customer_details" />
+        <activity android:name="srt.inz.ebilling.Updatereading" />
+    </application>
+
+</manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <Button
+        android:id="@+id/bt_addConsumer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="239dp"
+        android:background="#146a89"
+        android:padding="10dp"
+        android:text="Add Consumer Details"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_addBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_addConsumer"
+        android:layout_alignRight="@+id/bt_addConsumer"
+        android:layout_below="@+id/bt_addConsumer"
+        android:layout_marginTop="40dp"
+        android:background="#146a89"
+        android:padding="10dp"
+        android:text="Add Meter Reading"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/bt_addConsumer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="81dp"
+        android:src="@drawable/ele" />
+
+</RelativeLayout>
